@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s1g-Ge-NFU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="fv3-Ps-My8">
+            <objects>
+                <viewController id="s1g-Ge-NFU" customClass="ViewController" customModule="AltitudeLongtitude" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YOO-aG-G6R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXL-Aq-hEA" customClass="GradientView" customModule="AltitudeLongtitude" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="GPS Altitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVQ-Ec-84o">
+                                        <rect key="frame" x="8" y="78" width="108" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="XrC-aW-BC2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+/-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eb9-bZ-6JQ">
+                                        <rect key="frame" x="8" y="126" width="42" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="RKf-yk-g0V"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've Climbed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lou-BI-NEk">
+                                        <rect key="frame" x="240" y="76" width="135" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eb9-bZ-6JQ" secondAttribute="trailing" constant="20" symbolic="YES" id="0fS-1X-Qnd"/>
+                                    <constraint firstItem="eb9-bZ-6JQ" firstAttribute="top" secondItem="KVQ-Ec-84o" secondAttribute="bottom" constant="27" id="1dF-YX-04H"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lou-BI-NEk" secondAttribute="trailing" id="77w-WK-mnK"/>
+                                    <constraint firstItem="Lou-BI-NEk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KVQ-Ec-84o" secondAttribute="trailing" constant="8" symbolic="YES" id="7E5-dz-6tD"/>
+                                    <constraint firstItem="KVQ-Ec-84o" firstAttribute="leading" secondItem="oXL-Aq-hEA" secondAttribute="leadingMargin" id="82q-C3-ICe"/>
+                                    <constraint firstItem="KVQ-Ec-84o" firstAttribute="leading" secondItem="eb9-bZ-6JQ" secondAttribute="leading" id="9dQ-yT-Zlz"/>
+                                    <constraint firstItem="Lou-BI-NEk" firstAttribute="top" secondItem="oXL-Aq-hEA" secondAttribute="top" constant="76" id="EmZ-5c-jY4"/>
+                                    <constraint firstItem="eb9-bZ-6JQ" firstAttribute="top" secondItem="oXL-Aq-hEA" secondAttribute="top" constant="126" id="RU1-qd-CGK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oXL-Aq-hEA" firstAttribute="bottom" secondItem="A4z-fY-cQk" secondAttribute="bottom" id="4ae-Yu-DNw"/>
+                            <constraint firstItem="oXL-Aq-hEA" firstAttribute="top" secondItem="YOO-aG-G6R" secondAttribute="top" id="RaK-Qg-kMW"/>
+                            <constraint firstItem="oXL-Aq-hEA" firstAttribute="trailing" secondItem="A4z-fY-cQk" secondAttribute="trailing" id="Wrq-Le-H54"/>
+                            <constraint firstItem="oXL-Aq-hEA" firstAttribute="leading" secondItem="A4z-fY-cQk" secondAttribute="leading" id="ijL-yz-IUp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A4z-fY-cQk"/>
+                    </view>
+                    <connections>
+                        <outlet property="altimiterLabel" destination="eb9-bZ-6JQ" id="xhB-a9-tIH"/>
+                        <outlet property="altitudeMarginOfErrorLabel" destination="Lou-BI-NEk" id="RJx-jA-oUQ"/>
+                        <outlet property="gpsAltitudeLabel" destination="KVQ-Ec-84o" id="Ho2-y9-i48"/>
+                        <outlet property="gradientView" destination="oXL-Aq-hEA" id="JO0-ud-tD0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yQs-pt-1SA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88.799999999999997" y="-21.139430284857571"/>
+        </scene>
+    </scenes>
+</document>
